@@ -1,0 +1,10 @@
+<h3>All the students</h3>
+<hr/>
+<% @students.each do |student| %>
+<p>Name: <%= student.my_name %></p>
+<p>Age: <%= student.age %></p>
+<p>House: <%= student.house().house_name %></p>
+<p>Id:<%= student.id %></p>
+<a href='/students/<%= student.id %>'>Show Details</a>
+<hr/>
+<% end %>
